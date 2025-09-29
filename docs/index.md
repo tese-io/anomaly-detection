@@ -7,5 +7,3 @@ This site documents our anomaly-detection system: high-level architecture, flows
 - **Flows** → Text Q&A + Document Analysis pipelines
 - **Scoring & Output** → AnswerScore, TamperScore, SupportScore, final JSON schema
 - **Implementation** → APIs, adapters, deployment
-
-Index Page

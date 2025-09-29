@@ -4,5 +4,3 @@
 - [ ] Add sample adapters (OCR, tamper)
 - [ ] Benchmarks + test fixtures
 - [ ] Good first issues for contributors
-
-Hello World
