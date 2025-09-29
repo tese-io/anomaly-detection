@@ -1,15 +1,15 @@
-site_name: Tese - Anomaly Detection Architecture
-site_description: Open documentation for our anomaly-detection system: architecture, flows, scoring, and API specs.
-site_url: https://<your-github-username>.github.io/anomaly-detection-architecture/
+site_name: "Tese - Anomaly Detection Architecture"
+site_description: "Open documentation for our anomaly-detection system: architecture, flows, scoring, and API specs."
+site_url: "https://tese-io.github.io/anomaly-detection/"
 theme:
-  name: material
-repo_url: https://github.com/<your-github-username>/anomaly-detection-architecture
+  name: "material"
+repo_url: "https://github.com/tese-io/anomaly-detection"
 nav:
   - Home: index.md
   - Architecture: architecture.md
   - Flows:
-      - Text Q&A Flow: flows/text-qa.md
-      - Document Analysis Flow: flows/document-analysis.md
-  - Scoring & Output: scoring.md
+      - "Text Q&A Flow": flows/text-qa.md
+      - "Document Analysis Flow": flows/document-analysis.md
+  - "Scoring & Output": scoring.md
   - Implementation: implementation.md
   - Roadmap: roadmap.md
