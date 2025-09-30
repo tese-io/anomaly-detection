@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://tese-io.github.io/anomaly-detection/implementation.html">
+        <link rel="canonical" href="https://tese-io.github.io/anomaly-detection/cost-analysis.html">
       
       
-        <link rel="prev" href="scoring.html">
+        <link rel="prev" href="implementation.html">
       
       
-        <link rel="next" href="cost-analysis.html">
+        <link rel="next" href="sample.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Implementation - Tese - Anomaly Detection Architecture</title>
+        <title>Cost Analysis - Tese - Anomaly Detection Architecture</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#implementation-guide" class="md-skip">
+        <a href="#cost-analysis" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Implementation
+              Cost Analysis
             
           </span>
         </div>
@@ -320,10 +320,8 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
+    <li class="md-tabs__item">
       <a href="implementation.html" class="md-tabs__link">
         
   
@@ -341,8 +339,10 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
+  
+    <li class="md-tabs__item md-tabs__item--active">
       <a href="cost-analysis.html" class="md-tabs__link">
         
   
@@ -629,6 +629,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="implementation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -646,7 +668,7 @@
   
   
   <span class="md-ellipsis">
-    Implementation
+    Cost Analysis
     
   </span>
   
@@ -654,12 +676,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="implementation.html" class="md-nav__link md-nav__link--active">
+      <a href="cost-analysis.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Implementation
+    Cost Analysis
     
   </span>
   
@@ -682,274 +704,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-architecture-overview" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      System Architecture Overview
+      Overview
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="System Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#high-level-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      High-Level Architecture
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#component-responsibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Component Responsibilities
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Component Responsibilities">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-input-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Input Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-processing-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Processing Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-output-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Output Layer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#development-environment-setup" class="md-nav__link">
+  <a href="#cost-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Development Environment Setup
+      Cost Components
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Development Environment Setup">
+    <nav class="md-nav" aria-label="Cost Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#1-google-document-ai-extraction" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      1. Google Document AI (Extraction)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#local-development-setup" class="md-nav__link">
+  <a href="#2-resistant-ai-document-forensics-tamperfraud" class="md-nav__link">
     <span class="md-ellipsis">
-      Local Development Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Local Development Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-clone-and-setup-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Clone and Setup Repository
+      2. Resistant AI Document Forensics (Tamper/Fraud)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-python-environment-setup" class="md-nav__link">
+  <a href="#3-your-ai-agents-llm-calls" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Python Environment Setup
+      3. Your AI Agents (LLM Calls)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-environment-configuration" class="md-nav__link">
+  <a href="#4-object-storage" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Environment Configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#main-api-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main API Endpoints
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Main API Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#post-apiv1anomaly-detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      POST /api/v1/anomaly-detection
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1health" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/health
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1resultsrun_id" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/results/{run_id}
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Tables
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Core Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#processing-runs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processing Runs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analysis-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis Results
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment Strategy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deployment Strategy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#docker-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environment Variables
+      4. Object Storage
     </span>
   </a>
   
@@ -961,37 +764,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing-strategy" class="md-nav__link">
+  <a href="#per-document-cost-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing Strategy
+      Per-Document Cost Examples
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Testing Strategy">
+    <nav class="md-nav" aria-label="Per-Document Cost Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#unit-tests" class="md-nav__link">
+  <a href="#scenario-a-3-separate-monthly-bills-3-pages-total" class="md-nav__link">
     <span class="md-ellipsis">
-      Unit Tests
+      Scenario A: 3 Separate Monthly Bills (3 pages total)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#integration-tests" class="md-nav__link">
+  <a href="#scenario-b-only-12-bills-uploaded-12-pages" class="md-nav__link">
     <span class="md-ellipsis">
-      Integration Tests
+      Scenario B: Only 1–2 Bills Uploaded (1–2 pages)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#performance-tests" class="md-nav__link">
+  <a href="#scenario-c-one-bill-with-usage-history-table-1-page" class="md-nav__link">
     <span class="md-ellipsis">
-      Performance Tests
+      Scenario C: One Bill with Usage History Table (1 page)
     </span>
   </a>
   
@@ -1003,37 +806,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitoring-and-logging" class="md-nav__link">
+  <a href="#monthly-cost-projections" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring and Logging
+      Monthly Cost Projections
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Monitoring and Logging">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cost-optimization-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Optimization Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cost Optimization Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#structured-logging" class="md-nav__link">
+  <a href="#1-processor-selection" class="md-nav__link">
     <span class="md-ellipsis">
-      Structured Logging
+      1. Processor Selection
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
+  <a href="#2-batch-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      Health Checks
+      2. Batch Processing
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#metrics-collection" class="md-nav__link">
+  <a href="#3-volume-discounts" class="md-nav__link">
     <span class="md-ellipsis">
-      Metrics Collection
+      3. Volume Discounts
     </span>
   </a>
   
@@ -1041,6 +853,123 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cost-levers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Levers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cost Levers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-optimizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immediate Optimizations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#long-term-optimizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long-term Optimizations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#budget-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget Planning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Budget Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startup-phase-1000-documentsmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Startup Phase (1,000 documents/month)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#growth-phase-10000-documentsmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Growth Phase (10,000 documents/month)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-phase-100000-documentsmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale Phase (100,000 documents/month)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roi-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROI Considerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROI Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cost-per-document-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost per Document Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value-proposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Value Proposition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
   
 </li>
       
@@ -1048,28 +977,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="cost-analysis.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Cost Analysis
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1145,274 +1052,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-architecture-overview" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      System Architecture Overview
+      Overview
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="System Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#high-level-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      High-Level Architecture
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#component-responsibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Component Responsibilities
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Component Responsibilities">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-input-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Input Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-processing-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Processing Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-output-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Output Layer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#development-environment-setup" class="md-nav__link">
+  <a href="#cost-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Development Environment Setup
+      Cost Components
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Development Environment Setup">
+    <nav class="md-nav" aria-label="Cost Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#1-google-document-ai-extraction" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      1. Google Document AI (Extraction)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#local-development-setup" class="md-nav__link">
+  <a href="#2-resistant-ai-document-forensics-tamperfraud" class="md-nav__link">
     <span class="md-ellipsis">
-      Local Development Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Local Development Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-clone-and-setup-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Clone and Setup Repository
+      2. Resistant AI Document Forensics (Tamper/Fraud)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-python-environment-setup" class="md-nav__link">
+  <a href="#3-your-ai-agents-llm-calls" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Python Environment Setup
+      3. Your AI Agents (LLM Calls)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-environment-configuration" class="md-nav__link">
+  <a href="#4-object-storage" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Environment Configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#main-api-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main API Endpoints
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Main API Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#post-apiv1anomaly-detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      POST /api/v1/anomaly-detection
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1health" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/health
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1resultsrun_id" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/results/{run_id}
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Tables
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Core Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#processing-runs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processing Runs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analysis-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis Results
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment Strategy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deployment Strategy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#docker-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environment Variables
+      4. Object Storage
     </span>
   </a>
   
@@ -1424,37 +1112,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing-strategy" class="md-nav__link">
+  <a href="#per-document-cost-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing Strategy
+      Per-Document Cost Examples
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Testing Strategy">
+    <nav class="md-nav" aria-label="Per-Document Cost Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#unit-tests" class="md-nav__link">
+  <a href="#scenario-a-3-separate-monthly-bills-3-pages-total" class="md-nav__link">
     <span class="md-ellipsis">
-      Unit Tests
+      Scenario A: 3 Separate Monthly Bills (3 pages total)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#integration-tests" class="md-nav__link">
+  <a href="#scenario-b-only-12-bills-uploaded-12-pages" class="md-nav__link">
     <span class="md-ellipsis">
-      Integration Tests
+      Scenario B: Only 1–2 Bills Uploaded (1–2 pages)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#performance-tests" class="md-nav__link">
+  <a href="#scenario-c-one-bill-with-usage-history-table-1-page" class="md-nav__link">
     <span class="md-ellipsis">
-      Performance Tests
+      Scenario C: One Bill with Usage History Table (1 page)
     </span>
   </a>
   
@@ -1466,37 +1154,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitoring-and-logging" class="md-nav__link">
+  <a href="#monthly-cost-projections" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring and Logging
+      Monthly Cost Projections
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Monitoring and Logging">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cost-optimization-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Optimization Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cost Optimization Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#structured-logging" class="md-nav__link">
+  <a href="#1-processor-selection" class="md-nav__link">
     <span class="md-ellipsis">
-      Structured Logging
+      1. Processor Selection
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
+  <a href="#2-batch-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      Health Checks
+      2. Batch Processing
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#metrics-collection" class="md-nav__link">
+  <a href="#3-volume-discounts" class="md-nav__link">
     <span class="md-ellipsis">
-      Metrics Collection
+      3. Volume Discounts
     </span>
   </a>
   
@@ -1504,6 +1201,123 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cost-levers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Levers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cost Levers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-optimizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immediate Optimizations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#long-term-optimizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long-term Optimizations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#budget-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget Planning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Budget Planning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startup-phase-1000-documentsmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Startup Phase (1,000 documents/month)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#growth-phase-10000-documentsmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Growth Phase (10,000 documents/month)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-phase-100000-documentsmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scale Phase (100,000 documents/month)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roi-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROI Considerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROI Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cost-per-document-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost per Document Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value-proposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Value Proposition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
   
 </li>
       
@@ -1526,172 +1340,178 @@
   
 
 
-<h1 id="implementation-guide">Implementation Guide</h1>
-<h2 id="system-architecture-overview">System Architecture Overview</h2>
-<h3 id="high-level-architecture">High-Level Architecture</h3>
-<pre><code>┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Input Layer   │    │  Processing      │    │   Output Layer  │
-│                 │    │  Layer           │    │                 │
-│ • File Upload   │───▶│ • Orchestrator   │───▶│ • Results       │
-│ • API Gateway   │    │ • Text Analysis  │    │ • Notifications │
-│ • Validation    │    │ • Doc Analysis   │    │ • Storage       │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                       ┌─────────────────┐
-                       │  External APIs  │
-                       │                 │
-                       │ • Google DocAI  │
-                       │ • Resistant AI  │
-                       │ • OpenAI        │
-                       └─────────────────┘
-</code></pre>
-<h3 id="component-responsibilities">Component Responsibilities</h3>
-<h4 id="1-input-layer">1. Input Layer</h4>
+<h1 id="cost-analysis">Cost Analysis</h1>
+<h2 id="overview">Overview</h2>
+<p>This document provides a comprehensive cost analysis for the anomaly detection system using Google Document AI and Resistant AI. The analysis covers per-document costs, monthly projections, and optimization strategies.</p>
+<h2 id="cost-components">Cost Components</h2>
+<h3 id="1-google-document-ai-extraction">1. Google Document AI (Extraction)</h3>
+<p>Document AI is billed <strong>per page</strong> and <strong>by processor</strong>:</p>
 <ul>
-<li><strong>File Upload Service</strong>: Handles file uploads, validation, and storage</li>
-<li><strong>API Gateway</strong>: Manages authentication, rate limiting, and routing</li>
-<li><strong>Validation Service</strong>: Validates input data and file formats</li>
+<li><strong>Form Parser</strong> (good default for utility bills, tables &amp; key-values): <strong>$30 / 1,000 pages</strong> (= $0.03/page) for up to 1M pages/month; $20 / 1,000 thereafter</li>
+<li><strong>Enterprise Document OCR</strong> (plain OCR text only): <strong>$1.50 / 1,000 pages</strong> (= $0.0015/page)</li>
+<li><strong>Pretrained "Utility parser"</strong> (if Google grants access): <strong>$0.10 per 10 pages</strong> (= $0.01/page). Note: <strong>limited-access</strong> processor—you must request enablement</li>
+<li><strong>Custom processors</strong> (only if you train your own): hosting <strong>$0.05/hour</strong> per deployed version (in addition to per-page prediction)</li>
 </ul>
-<h4 id="2-processing-layer">2. Processing Layer</h4>
+<p><strong>What counts as a page</strong>: PDF page = 1, image = 1; <strong>DOCX up to 3,000 characters = 1 page; XLSX each sheet/tab = 1 page; PPTX each slide = 1 page.</strong></p>
+<h3 id="2-resistant-ai-document-forensics-tamperfraud">2. Resistant AI Document Forensics (Tamper/Fraud)</h3>
 <ul>
-<li><strong>Orchestrator</strong>: Coordinates all processing flows</li>
-<li><strong>Text Analysis Engine</strong>: Analyzes historical data for anomalies</li>
-<li><strong>Document Analysis Engine</strong>: Processes files for tampering and content</li>
-<li><strong>Scoring Engine</strong>: Generates final scores and explanations</li>
+<li><strong>Pricing is not public</strong>; sold via <strong>Google Cloud Marketplace</strong> / <strong>AWS Marketplace</strong> and typically <strong>quote-based</strong> by volume &amp; deployment</li>
+<li>They provide an <strong>ROI calculator</strong> but not rates; marketing claims "&lt;20 seconds" checks at scale</li>
+<li>Expect contract pricing, not self-serve</li>
 </ul>
-<h4 id="3-output-layer">3. Output Layer</h4>
+<h3 id="3-your-ai-agents-llm-calls">3. Your AI Agents (LLM Calls)</h3>
+<p>Using an efficient OpenAI model (e.g., <strong>GPT-4o-mini</strong>), public rates are: <strong>$0.15 / 1M input tokens</strong> and <strong>$0.60 / 1M output tokens</strong>. Your validation/orchestration prompts are small, so this cost is typically pennies per <strong>thousands</strong> of runs.</p>
+<h3 id="4-object-storage">4. Object Storage</h3>
+<p>If you use <strong>Google Cloud Storage (Standard)</strong>, reference pricing is about <strong>$0.020/GB-month</strong> in common US regions (plus tiny request/egress fees).</p>
+<h2 id="per-document-cost-examples">Per-Document Cost Examples</h2>
+<h3 id="scenario-a-3-separate-monthly-bills-3-pages-total">Scenario A: 3 Separate Monthly Bills (3 pages total)</h3>
 <ul>
-<li><strong>Results Service</strong>: Formats and delivers results</li>
-<li><strong>Notification Service</strong>: Sends alerts and updates</li>
-<li><strong>Storage Service</strong>: Manages data persistence</li>
+<li><strong>DocAI (Form Parser):</strong> 3 × $0.03 = <strong>$0.09</strong>. If you get access to <strong>Utility parser</strong>: 3 × $0.01 = <strong>$0.03</strong></li>
+<li><strong>Resistant AI:</strong> <strong>contract-based</strong> (TBD with vendor)</li>
+<li><strong>Your agents (LLM):</strong> example 16k input + 4k output tokens → (0.016×$0.15) + (0.004×$0.60) ≈ <strong>$0.0048</strong></li>
+<li><strong>Storage:</strong> ~3 MB kept → ≈ <strong>$0.00006</strong>/month at $0.020/GB</li>
 </ul>
-<h2 id="development-environment-setup">Development Environment Setup</h2>
-<h3 id="prerequisites">Prerequisites</h3>
+<h3 id="scenario-b-only-12-bills-uploaded-12-pages">Scenario B: Only 1–2 Bills Uploaded (1–2 pages)</h3>
 <ul>
-<li>Python 3.9+</li>
-<li>Node.js 16+ (for API gateway)</li>
-<li>Docker and Docker Compose</li>
-<li>Google Cloud SDK</li>
-<li>OpenAI API access</li>
+<li><strong>DocAI (Form Parser):</strong> $0.03–$0.06 (or $0.01–$0.02 via Utility parser)</li>
+<li><strong>Resistant AI:</strong> contract-based</li>
+<li><strong>LLM + storage:</strong> roughly proportional (tiny)</li>
 </ul>
-<h3 id="local-development-setup">Local Development Setup</h3>
-<h4 id="1-clone-and-setup-repository">1. Clone and Setup Repository</h4>
-<pre><code class="language-bash">git clone &lt;repository-url&gt;
-cd anomaly-detection-system
-</code></pre>
-<h4 id="2-python-environment-setup">2. Python Environment Setup</h4>
-<pre><code class="language-bash"># Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-</code></pre>
-<h4 id="3-environment-configuration">3. Environment Configuration</h4>
-<pre><code class="language-bash"># Copy environment template
-cp .env.example .env
-
-# Configure environment variables
-GOOGLE_CLOUD_PROJECT=your-project-id
-GOOGLE_APPLICATION_CREDENTIALS=path/to/service-account.json
-OPENAI_API_KEY=your-openai-api-key
-RESISTANT_AI_API_KEY=your-resistant-ai-key
-</code></pre>
-<h2 id="api-design">API Design</h2>
-<h3 id="main-api-endpoints">Main API Endpoints</h3>
-<h4 id="post-apiv1anomaly-detection">POST /api/v1/anomaly-detection</h4>
-<p>Main anomaly detection endpoint that accepts:
-- <code>question_id</code>: String identifier for the question
-- <code>answer</code>: User's answer to validate
-- <code>files</code>: List of uploaded files
-- <code>metadata</code>: Optional metadata</p>
-<p>Returns comprehensive anomaly analysis with three scores:
-- Text anomaly score
-- Tampering score<br />
-- Support score</p>
-<h4 id="get-apiv1health">GET /api/v1/health</h4>
-<p>Health check endpoint for monitoring system status.</p>
-<h4 id="get-apiv1resultsrun_id">GET /api/v1/results/{run_id}</h4>
-<p>Retrieve results by run ID for tracking processing status.</p>
-<h2 id="database-design">Database Design</h2>
-<h3 id="core-tables">Core Tables</h3>
-<h4 id="processing-runs">Processing Runs</h4>
-<p>Stores information about each anomaly detection run:
-- <code>run_id</code>: Unique identifier
-- <code>question_id</code>: Question being analyzed
-- <code>answer</code>: User's answer
-- <code>status</code>: Processing status
-- <code>created_at</code>: Timestamp
-- <code>processing_time_ms</code>: Processing duration</p>
-<h4 id="files">Files</h4>
-<p>Stores information about uploaded files:
-- <code>file_id</code>: Unique file identifier
-- <code>run_id</code>: Associated processing run
-- <code>file_path</code>: Storage path
-- <code>file_type</code>: File format
-- <code>file_size</code>: File size in bytes
-- <code>sha256_hash</code>: File integrity hash</p>
-<h4 id="analysis-results">Analysis Results</h4>
-<p>Stores the final analysis results:
-- <code>result_id</code>: Unique result identifier
-- <code>run_id</code>: Associated processing run
-- <code>text_anomaly_score</code>: Text analysis score
-- <code>tampering_score</code>: Document tampering score
-- <code>support_score</code>: Answer support score
-- <code>final_decision</code>: Overall decision</p>
-<h2 id="deployment-strategy">Deployment Strategy</h2>
-<h3 id="docker-configuration">Docker Configuration</h3>
-<p>The system can be deployed using Docker containers with:
-- <strong>Main Application</strong>: FastAPI-based anomaly detection service
-- <strong>Database</strong>: PostgreSQL for data persistence
-- <strong>Cache</strong>: Redis for session management
-- <strong>Reverse Proxy</strong>: Nginx for load balancing</p>
-<h3 id="environment-variables">Environment Variables</h3>
-<p>Key environment variables for configuration:
-- <code>DATABASE_URL</code>: PostgreSQL connection string
-- <code>REDIS_URL</code>: Redis connection string
-- <code>GOOGLE_CLOUD_PROJECT</code>: Google Cloud project ID
-- <code>OPENAI_API_KEY</code>: OpenAI API key
-- <code>RESISTANT_AI_API_KEY</code>: Resistant AI API key</p>
-<h2 id="testing-strategy">Testing Strategy</h2>
-<h3 id="unit-tests">Unit Tests</h3>
+<h3 id="scenario-c-one-bill-with-usage-history-table-1-page">Scenario C: One Bill with Usage History Table (1 page)</h3>
 <ul>
-<li>Test individual components in isolation</li>
-<li>Mock external dependencies</li>
-<li>Verify error handling and edge cases</li>
+<li><strong>DocAI (Form Parser):</strong> <strong>$0.03</strong> (or <strong>$0.01</strong> with Utility parser)</li>
+<li><strong>Resistant AI / LLM / storage:</strong> as above</li>
 </ul>
-<h3 id="integration-tests">Integration Tests</h3>
+<blockquote>
+<p>If your bills average <strong>2 pages</strong>, double the DocAI portion. XLSX with <strong>3 tabs</strong> counts as <strong>3 pages</strong>; a DOCX over <strong>3,000 chars</strong> spills into multiple billable "pages."</p>
+</blockquote>
+<h2 id="monthly-cost-projections">Monthly Cost Projections</h2>
+<p>Assume <strong>each verification</strong> has 3 one-page bills (3 pages), Form Parser pricing, and our earlier LLM estimate.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Monthly Verifications</th>
+<th style="text-align: right;">DocAI pages</th>
+<th style="text-align: right;">DocAI cost (Form Parser)</th>
+<th style="text-align: right;">LLM est.</th>
+<th style="text-align: right;">Storage new (GB)</th>
+<th style="text-align: right;">Storage cost est.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">3,000</td>
+<td style="text-align: right;"><strong>$90</strong></td>
+<td style="text-align: right;"><strong>$4.80</strong></td>
+<td style="text-align: right;">~3 GB</td>
+<td style="text-align: right;"><strong>$0.06</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">10,000</td>
+<td style="text-align: right;">30,000</td>
+<td style="text-align: right;"><strong>$900</strong></td>
+<td style="text-align: right;"><strong>$48</strong></td>
+<td style="text-align: right;">~30 GB</td>
+<td style="text-align: right;"><strong>$0.60</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">100,000</td>
+<td style="text-align: right;">300,000</td>
+<td style="text-align: right;"><strong>$9,000</strong></td>
+<td style="text-align: right;"><strong>$480</strong></td>
+<td style="text-align: right;">~300 GB</td>
+<td style="text-align: right;"><strong>$6.00</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>(Resistant AI is additional and quote-based.)</em></p>
+<p>If you secure access to <strong>Utility parser</strong> ($0.01/page), the DocAI column drops by ~<strong>66%</strong>: e.g., 10k verifications would be <strong>$300</strong> instead of <strong>$900</strong>. (Utility parser is <strong>limited access</strong>; you must apply.)</p>
+<h2 id="cost-optimization-strategies">Cost Optimization Strategies</h2>
+<h3 id="1-processor-selection">1. Processor Selection</h3>
 <ul>
-<li>Test API endpoints with real data</li>
-<li>Verify database interactions</li>
-<li>Test file upload and processing</li>
+<li><strong>Use Form Parser by default</strong>: Most cost-effective for general documents</li>
+<li><strong>Apply for Utility Parser access</strong>: Reduces cost by ~66% for eligible documents</li>
+<li><strong>Optimize page counts</strong>: Avoid unnecessary multi-page scans</li>
+<li><strong>Cache common prompts</strong>: Reduce LLM costs through prompt optimization</li>
+<li><strong>Storage tiering</strong>: Move older data to cheaper storage tiers</li>
 </ul>
-<h3 id="performance-tests">Performance Tests</h3>
+<h3 id="2-batch-processing">2. Batch Processing</h3>
 <ul>
-<li>Load testing with concurrent requests</li>
-<li>Memory and CPU usage monitoring</li>
-<li>Response time validation</li>
+<li><strong>Group similar documents</strong>: Process multiple documents in batches</li>
+<li><strong>Optimize file formats</strong>: Use PDFs instead of images when possible</li>
+<li><strong>Compress files</strong>: Reduce storage costs with appropriate compression</li>
 </ul>
-<h2 id="monitoring-and-logging">Monitoring and Logging</h2>
-<h3 id="structured-logging">Structured Logging</h3>
+<h3 id="3-volume-discounts">3. Volume Discounts</h3>
 <ul>
-<li>JSON-formatted logs for easy parsing</li>
-<li>Correlation IDs for request tracking</li>
-<li>Error tracking and alerting</li>
+<li><strong>Google Document AI</strong>: Volume discounts available for high usage</li>
+<li><strong>Resistant AI</strong>: Contract-based pricing with volume tiers</li>
+<li><strong>OpenAI</strong>: Usage-based pricing with potential enterprise discounts</li>
 </ul>
-<h3 id="health-checks">Health Checks</h3>
+<h2 id="cost-levers">Cost Levers</h2>
+<h3 id="immediate-optimizations">Immediate Optimizations</h3>
+<ol>
+<li><strong>Use Form Parser by default</strong> for most documents</li>
+<li><strong>Apply for Utility Parser access</strong> to reduce costs by 66% for utility bills</li>
+<li><strong>Optimize page counts</strong> by trimming cover pages and unnecessary content</li>
+<li><strong>Cache common agent prompts</strong> to reduce LLM costs</li>
+<li><strong>Use appropriate storage tiers</strong> for different data types</li>
+</ol>
+<h3 id="long-term-optimizations">Long-term Optimizations</h3>
+<ol>
+<li><strong>Negotiate volume discounts</strong> with Resistant AI through Google/AWS Marketplace</li>
+<li><strong>Implement intelligent caching</strong> for frequently processed documents</li>
+<li><strong>Use custom processors</strong> for specific document types if volume justifies the cost</li>
+<li><strong>Optimize data retention policies</strong> to minimize storage costs</li>
+</ol>
+<h2 id="budget-planning">Budget Planning</h2>
+<h3 id="startup-phase-1000-documentsmonth">Startup Phase (1,000 documents/month)</h3>
 <ul>
-<li>Database connectivity</li>
-<li>External API availability</li>
-<li>System resource monitoring</li>
+<li><strong>Document AI</strong>: $90</li>
+<li><strong>LLM</strong>: $4.80</li>
+<li><strong>Storage</strong>: $0.06</li>
+<li><strong>Resistant AI</strong>: Contract-based (estimate $100-500/month)</li>
+<li><strong>Total</strong>: ~$200-600/month</li>
 </ul>
-<h3 id="metrics-collection">Metrics Collection</h3>
+<h3 id="growth-phase-10000-documentsmonth">Growth Phase (10,000 documents/month)</h3>
 <ul>
-<li>Processing time tracking</li>
-<li>Error rate monitoring</li>
-<li>Cost per document analysis</li>
+<li><strong>Document AI</strong>: $900</li>
+<li><strong>LLM</strong>: $48</li>
+<li><strong>Storage</strong>: $0.60</li>
+<li><strong>Resistant AI</strong>: Contract-based (estimate $1,000-5,000/month)</li>
+<li><strong>Total</strong>: ~$2,000-6,000/month</li>
 </ul>
+<h3 id="scale-phase-100000-documentsmonth">Scale Phase (100,000 documents/month)</h3>
+<ul>
+<li><strong>Document AI</strong>: $9,000</li>
+<li><strong>LLM</strong>: $480</li>
+<li><strong>Storage</strong>: $6.00</li>
+<li><strong>Resistant AI</strong>: Contract-based (estimate $10,000-50,000/month)</li>
+<li><strong>Total</strong>: ~$20,000-60,000/month</li>
+</ul>
+<h2 id="roi-considerations">ROI Considerations</h2>
+<h3 id="cost-per-document-analysis">Cost per Document Analysis</h3>
+<ul>
+<li><strong>Form Parser path</strong>: ~$0.031 + Resistant AI cost</li>
+<li><strong>Utility Parser path</strong>: ~$0.101 + Resistant AI cost</li>
+<li><strong>LLM costs</strong>: ~$0.001–0.002 per document</li>
+<li><strong>Storage</strong>: ~$0.00002–0.00005 per month</li>
+</ul>
+<h3 id="value-proposition">Value Proposition</h3>
+<ul>
+<li><strong>Automated fraud detection</strong> reduces manual review costs</li>
+<li><strong>High accuracy</strong> minimizes false positives and negatives</li>
+<li><strong>Scalable processing</strong> handles high volumes efficiently</li>
+<li><strong>Audit trail</strong> provides compliance and transparency</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The anomaly detection system provides cost-effective document validation with clear pricing models for most components. The main variable cost is Resistant AI, which requires contract negotiation but provides enterprise-grade fraud detection capabilities.</p>
+<p>Key recommendations:
+1. Start with Form Parser for cost efficiency
+2. Apply for Utility Parser access to reduce costs by 66%
+3. Negotiate volume discounts with Resistant AI
+4. Implement caching and optimization strategies
+5. Monitor costs and adjust strategies based on actual usage patterns</p>
 
 
 

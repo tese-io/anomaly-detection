@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://tese-io.github.io/anomaly-detection/implementation.html">
+        <link rel="canonical" href="https://tese-io.github.io/anomaly-detection/technology-stack.html">
       
       
-        <link rel="prev" href="scoring.html">
+        <link rel="prev" href="architecture.html">
       
       
-        <link rel="next" href="cost-analysis.html">
+        <link rel="next" href="flows/text-qa.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Implementation - Tese - Anomaly Detection Architecture</title>
+        <title>Technology Stack - Tese - Anomaly Detection Architecture</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#implementation-guide" class="md-skip">
+        <a href="#technology-stack" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Implementation
+              Technology Stack
             
           </span>
         </div>
@@ -262,8 +262,10 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
+  
+    <li class="md-tabs__item md-tabs__item--active">
       <a href="technology-stack.html" class="md-tabs__link">
         
   
@@ -320,10 +322,8 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
+    <li class="md-tabs__item">
       <a href="implementation.html" class="md-tabs__link">
         
   
@@ -487,10 +487,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="technology-stack.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Technology Stack
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="technology-stack.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -501,6 +523,224 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#google-document-ai-resistant-ai-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Document AI + Resistant AI Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Document AI + Resistant AI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-combination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Combination?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-document-ai-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Document AI Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Document AI Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-processors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Processors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processor-selection-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processor Selection Logic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resistant-ai-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistant AI Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resistant AI Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marketplace-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marketplace Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Architecture
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-integration-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Integration Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Integration Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resistant-ai-response-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistant AI Response Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-document-ai-response-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Document AI Response Format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cost-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cost Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processor-selection-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processor Selection Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Considerations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-assurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Assurance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -629,32 +869,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Implementation
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="implementation.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="implementation.html" class="md-nav__link">
         
   
   
@@ -665,389 +883,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#system-architecture-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Architecture Overview
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="System Architecture Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#high-level-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      High-Level Architecture
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#component-responsibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Component Responsibilities
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Component Responsibilities">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-input-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Input Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-processing-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Processing Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-output-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Output Layer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#development-environment-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Development Environment Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Development Environment Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-development-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Development Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Local Development Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-clone-and-setup-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Clone and Setup Repository
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-python-environment-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Python Environment Setup
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-environment-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Environment Configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#main-api-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main API Endpoints
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Main API Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#post-apiv1anomaly-detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      POST /api/v1/anomaly-detection
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1health" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/health
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1resultsrun_id" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/results/{run_id}
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Tables
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Core Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#processing-runs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processing Runs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analysis-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis Results
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment Strategy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deployment Strategy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#docker-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environment Variables
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testing Strategy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Testing Strategy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unit-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unit Tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integration Tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Performance Tests
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoring-and-logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring and Logging
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring and Logging">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#structured-logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      Structured Logging
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Health Checks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metrics-collection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Metrics Collection
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1145,274 +980,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-architecture-overview" class="md-nav__link">
+  <a href="#google-document-ai-resistant-ai-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      System Architecture Overview
+      Google Document AI + Resistant AI Integration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="System Architecture Overview">
+    <nav class="md-nav" aria-label="Google Document AI + Resistant AI Integration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#high-level-architecture" class="md-nav__link">
+  <a href="#why-this-combination" class="md-nav__link">
     <span class="md-ellipsis">
-      High-Level Architecture
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#component-responsibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Component Responsibilities
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Component Responsibilities">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-input-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Input Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-processing-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Processing Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-output-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Output Layer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#development-environment-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Development Environment Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Development Environment Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-development-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Development Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Local Development Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-clone-and-setup-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Clone and Setup Repository
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-python-environment-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Python Environment Setup
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-environment-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Environment Configuration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#main-api-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Main API Endpoints
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Main API Endpoints">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#post-apiv1anomaly-detection" class="md-nav__link">
-    <span class="md-ellipsis">
-      POST /api/v1/anomaly-detection
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1health" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/health
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-apiv1resultsrun_id" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET /api/v1/results/{run_id}
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Database Design">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Tables
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Core Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#processing-runs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processing Runs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#analysis-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis Results
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment-strategy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment Strategy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deployment Strategy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#docker-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environment Variables
+      Why This Combination?
     </span>
   </a>
   
@@ -1424,37 +1004,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing-strategy" class="md-nav__link">
+  <a href="#google-document-ai-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing Strategy
+      Google Document AI Setup
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Testing Strategy">
+    <nav class="md-nav" aria-label="Google Document AI Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#unit-tests" class="md-nav__link">
+  <a href="#available-processors" class="md-nav__link">
     <span class="md-ellipsis">
-      Unit Tests
+      Available Processors
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#integration-tests" class="md-nav__link">
+  <a href="#processor-selection-logic" class="md-nav__link">
     <span class="md-ellipsis">
-      Integration Tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Performance Tests
+      Processor Selection Logic
     </span>
   </a>
   
@@ -1466,37 +1037,136 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitoring-and-logging" class="md-nav__link">
+  <a href="#resistant-ai-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitoring and Logging
+      Resistant AI Setup
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Monitoring and Logging">
+    <nav class="md-nav" aria-label="Resistant AI Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#structured-logging" class="md-nav__link">
+  <a href="#marketplace-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      Structured Logging
+      Marketplace Integration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#health-checks" class="md-nav__link">
+  <a href="#integration-architecture" class="md-nav__link">
     <span class="md-ellipsis">
-      Health Checks
+      Integration Architecture
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-integration-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Integration Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Integration Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resistant-ai-response-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistant AI Response Format
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#metrics-collection" class="md-nav__link">
+  <a href="#google-document-ai-response-format" class="md-nav__link">
     <span class="md-ellipsis">
-      Metrics Collection
+      Google Document AI Response Format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cost-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cost Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processor-selection-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processor Selection Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cost Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Considerations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-assurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Assurance
     </span>
   </a>
   
@@ -1526,172 +1196,181 @@
   
 
 
-<h1 id="implementation-guide">Implementation Guide</h1>
-<h2 id="system-architecture-overview">System Architecture Overview</h2>
-<h3 id="high-level-architecture">High-Level Architecture</h3>
-<pre><code>┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Input Layer   │    │  Processing      │    │   Output Layer  │
-│                 │    │  Layer           │    │                 │
-│ • File Upload   │───▶│ • Orchestrator   │───▶│ • Results       │
-│ • API Gateway   │    │ • Text Analysis  │    │ • Notifications │
-│ • Validation    │    │ • Doc Analysis   │    │ • Storage       │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                       ┌─────────────────┐
-                       │  External APIs  │
-                       │                 │
-                       │ • Google DocAI  │
-                       │ • Resistant AI  │
-                       │ • OpenAI        │
-                       └─────────────────┘
-</code></pre>
-<h3 id="component-responsibilities">Component Responsibilities</h3>
-<h4 id="1-input-layer">1. Input Layer</h4>
+<h1 id="technology-stack">Technology Stack</h1>
+<h2 id="google-document-ai-resistant-ai-integration">Google Document AI + Resistant AI Integration</h2>
+<p>This guide provides detailed implementation instructions for integrating Google Document AI and Resistant AI into your anomaly detection system. The combination of these two services provides:</p>
 <ul>
-<li><strong>File Upload Service</strong>: Handles file uploads, validation, and storage</li>
-<li><strong>API Gateway</strong>: Manages authentication, rate limiting, and routing</li>
-<li><strong>Validation Service</strong>: Validates input data and file formats</li>
+<li><strong>Google Document AI</strong>: High-accuracy content extraction from various document formats</li>
+<li><strong>Resistant AI</strong>: Forensic-grade document tampering detection</li>
+<li><strong>Seamless Integration</strong>: Both services work together through Google Cloud Marketplace</li>
 </ul>
-<h4 id="2-processing-layer">2. Processing Layer</h4>
-<ul>
-<li><strong>Orchestrator</strong>: Coordinates all processing flows</li>
-<li><strong>Text Analysis Engine</strong>: Analyzes historical data for anomalies</li>
-<li><strong>Document Analysis Engine</strong>: Processes files for tampering and content</li>
-<li><strong>Scoring Engine</strong>: Generates final scores and explanations</li>
-</ul>
-<h4 id="3-output-layer">3. Output Layer</h4>
-<ul>
-<li><strong>Results Service</strong>: Formats and delivers results</li>
-<li><strong>Notification Service</strong>: Sends alerts and updates</li>
-<li><strong>Storage Service</strong>: Manages data persistence</li>
-</ul>
-<h2 id="development-environment-setup">Development Environment Setup</h2>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Python 3.9+</li>
-<li>Node.js 16+ (for API gateway)</li>
-<li>Docker and Docker Compose</li>
-<li>Google Cloud SDK</li>
-<li>OpenAI API access</li>
-</ul>
-<h3 id="local-development-setup">Local Development Setup</h3>
-<h4 id="1-clone-and-setup-repository">1. Clone and Setup Repository</h4>
-<pre><code class="language-bash">git clone &lt;repository-url&gt;
-cd anomaly-detection-system
-</code></pre>
-<h4 id="2-python-environment-setup">2. Python Environment Setup</h4>
-<pre><code class="language-bash"># Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+<h3 id="why-this-combination">Why This Combination?</h3>
+<p>Google officially recommends using Resistant AI with Document AI for enhanced fraud detection. This combination provides:</p>
+<ol>
+<li><strong>Comprehensive Coverage</strong>: Document AI extracts content, Resistant AI detects tampering</li>
+<li><strong>Enterprise Integration</strong>: Both available through Google Cloud Marketplace</li>
+<li><strong>Scalable Pricing</strong>: Pay-per-use model with volume discounts</li>
+<li><strong>High Accuracy</strong>: Specialized processors for different document types</li>
+</ol>
+<h2 id="google-document-ai-setup">Google Document AI Setup</h2>
+<h3 id="available-processors">Available Processors</h3>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th>Purpose</th>
+<th>Cost</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Form Parser</strong></td>
+<td>General extraction</td>
+<td>$30/1,000 pages</td>
+<td>Most documents</td>
+</tr>
+<tr>
+<td><strong>Utility Parser</strong></td>
+<td>Utility bills</td>
+<td>$0.10 per 10 pages</td>
+<td>Utility bills</td>
+</tr>
+<tr>
+<td><strong>Layout Parser</strong></td>
+<td>Text and tables</td>
+<td>$10/1,000 pages</td>
+<td>Structured documents</td>
+</tr>
+<tr>
+<td><strong>Enterprise OCR</strong></td>
+<td>High-accuracy OCR</td>
+<td>$1.50/1,000 pages</td>
+<td>Image-only documents</td>
+</tr>
+</tbody>
+</table>
+<h3 id="processor-selection-logic">Processor Selection Logic</h3>
+<pre><code class="language-python">class ProcessorSelector:
+    def __init__(self, project_id: str, location: str):
+        self.project_id = project_id
+        self.location = location
 
-# Install dependencies
-pip install -r requirements.txt
-</code></pre>
-<h4 id="3-environment-configuration">3. Environment Configuration</h4>
-<pre><code class="language-bash"># Copy environment template
-cp .env.example .env
+    def select_processor(self, file_info: FileInfo) -&gt; str:
+        &quot;&quot;&quot;Select appropriate processor based on file characteristics&quot;&quot;&quot;
 
-# Configure environment variables
-GOOGLE_CLOUD_PROJECT=your-project-id
-GOOGLE_APPLICATION_CREDENTIALS=path/to/service-account.json
-OPENAI_API_KEY=your-openai-api-key
-RESISTANT_AI_API_KEY=your-resistant-ai-key
+        # Check file type
+        if file_info.file_type.lower() in ['utility_bill', 'electricity_bill', 'gas_bill']:
+            return 'utility_parser'
+
+        # Check if it's an image-only document
+        if file_info.file_type.lower() in ['jpg', 'jpeg', 'png', 'tiff']:
+            return 'enterprise_ocr'
+
+        # Default to form parser
+        return 'form_parser'
 </code></pre>
-<h2 id="api-design">API Design</h2>
-<h3 id="main-api-endpoints">Main API Endpoints</h3>
-<h4 id="post-apiv1anomaly-detection">POST /api/v1/anomaly-detection</h4>
-<p>Main anomaly detection endpoint that accepts:
-- <code>question_id</code>: String identifier for the question
-- <code>answer</code>: User's answer to validate
-- <code>files</code>: List of uploaded files
-- <code>metadata</code>: Optional metadata</p>
-<p>Returns comprehensive anomaly analysis with three scores:
-- Text anomaly score
-- Tampering score<br />
-- Support score</p>
-<h4 id="get-apiv1health">GET /api/v1/health</h4>
-<p>Health check endpoint for monitoring system status.</p>
-<h4 id="get-apiv1resultsrun_id">GET /api/v1/results/{run_id}</h4>
-<p>Retrieve results by run ID for tracking processing status.</p>
-<h2 id="database-design">Database Design</h2>
-<h3 id="core-tables">Core Tables</h3>
-<h4 id="processing-runs">Processing Runs</h4>
-<p>Stores information about each anomaly detection run:
-- <code>run_id</code>: Unique identifier
-- <code>question_id</code>: Question being analyzed
-- <code>answer</code>: User's answer
-- <code>status</code>: Processing status
-- <code>created_at</code>: Timestamp
-- <code>processing_time_ms</code>: Processing duration</p>
-<h4 id="files">Files</h4>
-<p>Stores information about uploaded files:
-- <code>file_id</code>: Unique file identifier
-- <code>run_id</code>: Associated processing run
-- <code>file_path</code>: Storage path
-- <code>file_type</code>: File format
-- <code>file_size</code>: File size in bytes
-- <code>sha256_hash</code>: File integrity hash</p>
-<h4 id="analysis-results">Analysis Results</h4>
-<p>Stores the final analysis results:
-- <code>result_id</code>: Unique result identifier
-- <code>run_id</code>: Associated processing run
-- <code>text_anomaly_score</code>: Text analysis score
-- <code>tampering_score</code>: Document tampering score
-- <code>support_score</code>: Answer support score
-- <code>final_decision</code>: Overall decision</p>
-<h2 id="deployment-strategy">Deployment Strategy</h2>
-<h3 id="docker-configuration">Docker Configuration</h3>
-<p>The system can be deployed using Docker containers with:
-- <strong>Main Application</strong>: FastAPI-based anomaly detection service
-- <strong>Database</strong>: PostgreSQL for data persistence
-- <strong>Cache</strong>: Redis for session management
-- <strong>Reverse Proxy</strong>: Nginx for load balancing</p>
-<h3 id="environment-variables">Environment Variables</h3>
-<p>Key environment variables for configuration:
-- <code>DATABASE_URL</code>: PostgreSQL connection string
-- <code>REDIS_URL</code>: Redis connection string
-- <code>GOOGLE_CLOUD_PROJECT</code>: Google Cloud project ID
-- <code>OPENAI_API_KEY</code>: OpenAI API key
-- <code>RESISTANT_AI_API_KEY</code>: Resistant AI API key</p>
-<h2 id="testing-strategy">Testing Strategy</h2>
-<h3 id="unit-tests">Unit Tests</h3>
+<h2 id="resistant-ai-setup">Resistant AI Setup</h2>
+<h3 id="marketplace-integration">Marketplace Integration</h3>
+<p>Resistant AI is available through Google Cloud Marketplace and provides:</p>
 <ul>
-<li>Test individual components in isolation</li>
-<li>Mock external dependencies</li>
-<li>Verify error handling and edge cases</li>
+<li><strong>Document Forensics</strong>: Forensic-grade tampering detection</li>
+<li><strong>Support for Multiple File Formats</strong>: PDFs, images, Office documents</li>
+<li><strong>Real-time Analysis</strong>: &lt;20 seconds processing time</li>
+<li><strong>Detailed Tampering Indicators</strong>: Specific evidence of manipulation</li>
 </ul>
-<h3 id="integration-tests">Integration Tests</h3>
+<h3 id="integration-architecture">Integration Architecture</h3>
+<p>The system uses a clean separation of concerns:</p>
 <ul>
-<li>Test API endpoints with real data</li>
-<li>Verify database interactions</li>
-<li>Test file upload and processing</li>
+<li><strong>Resistant AI</strong> = "Is this document authentic/unaltered?"</li>
+<li><strong>Document AI</strong> = "What does this document say?"</li>
+<li><strong>Our Agents</strong> = "Does what it says support the user's answer?"</li>
 </ul>
-<h3 id="performance-tests">Performance Tests</h3>
-<ul>
-<li>Load testing with concurrent requests</li>
-<li>Memory and CPU usage monitoring</li>
-<li>Response time validation</li>
-</ul>
-<h2 id="monitoring-and-logging">Monitoring and Logging</h2>
-<h3 id="structured-logging">Structured Logging</h3>
-<ul>
-<li>JSON-formatted logs for easy parsing</li>
-<li>Correlation IDs for request tracking</li>
-<li>Error tracking and alerting</li>
-</ul>
-<h3 id="health-checks">Health Checks</h3>
-<ul>
-<li>Database connectivity</li>
-<li>External API availability</li>
-<li>System resource monitoring</li>
-</ul>
-<h3 id="metrics-collection">Metrics Collection</h3>
-<ul>
-<li>Processing time tracking</li>
-<li>Error rate monitoring</li>
-<li>Cost per document analysis</li>
-</ul>
+<h2 id="api-integration-details">API Integration Details</h2>
+<h3 id="resistant-ai-response-format">Resistant AI Response Format</h3>
+<pre><code class="language-json">{
+  &quot;file_id&quot;: &quot;f_001&quot;,
+  &quot;tamper_score&quot;: 78.4,
+  &quot;decision&quot;: &quot;likely_tampered&quot;,
+  &quot;indicators&quot;: [
+    &quot;handwritten overlay in numeric cell&quot;,
+    &quot;texture mismatch vs surrounding digits&quot;,
+    &quot;incremental edit artifacts&quot;
+  ]
+}
+</code></pre>
+<h3 id="google-document-ai-response-format">Google Document AI Response Format</h3>
+<pre><code class="language-json">{
+  &quot;file_id&quot;: &quot;f_001&quot;,
+  &quot;pages&quot;: [
+    {
+      &quot;page&quot;: 1,
+      &quot;kv&quot;: [
+        {
+          &quot;key&quot;: &quot;Usage (kWh)&quot;,
+          &quot;value&quot;: &quot;7833&quot;,
+          &quot;bbox&quot;: [x1, y1, x2, y2],
+          &quot;confidence&quot;: 0.93
+        }
+      ],
+      &quot;tables&quot;: [
+        {
+          &quot;name&quot;: &quot;Usage history&quot;,
+          &quot;rows&quot;: [
+            {&quot;month&quot;: &quot;Apr 2025&quot;, &quot;kwh&quot;: &quot;2410&quot;},
+            {&quot;month&quot;: &quot;May 2025&quot;, &quot;kwh&quot;: &quot;2613&quot;},
+            {&quot;month&quot;: &quot;Jun 2025&quot;, &quot;kwh&quot;: &quot;2810&quot;}
+          ],
+          &quot;bbox&quot;: [x1, y1, x2, y2],
+          &quot;confidence&quot;: 0.91
+        }
+      ],
+      &quot;text&quot;: &quot;extracted text content&quot;
+    }
+  ]
+}
+</code></pre>
+<h2 id="cost-optimization">Cost Optimization</h2>
+<h3 id="processor-selection-strategy">Processor Selection Strategy</h3>
+<ol>
+<li><strong>Use Form Parser by default</strong>: Most cost-effective for general documents</li>
+<li><strong>Apply for Utility Parser access</strong>: Reduces cost by ~66% for eligible documents</li>
+<li><strong>Optimize page counts</strong>: Avoid unnecessary multi-page scans</li>
+<li><strong>Cache common prompts</strong>: Reduce LLM costs through prompt optimization</li>
+<li><strong>Storage tiering</strong>: Move older data to cheaper storage tiers</li>
+</ol>
+<h3 id="cost-examples">Cost Examples</h3>
+<p><strong>Per Document (1-page utility bill):</strong>
+- <strong>Form Parser path</strong>: ~$0.031 + Resistant AI cost
+- <strong>Utility Parser path</strong>: ~$0.101 + Resistant AI cost
+- <strong>LLM costs</strong>: ~$0.001–0.002 per document
+- <strong>Storage</strong>: ~$0.00002–0.00005 per month</p>
+<p><strong>Monthly Examples:</strong>
+- 1,000 docs: ~$95 + Resistant AI
+- 10,000 docs: ~$950 + Resistant AI
+- 100,000 docs: ~$9,500 + Resistant AI</p>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="performance-optimization">Performance Optimization</h3>
+<ol>
+<li><strong>Parallel processing</strong>: Process multiple files simultaneously</li>
+<li><strong>Caching</strong>: Cache common document types and patterns</li>
+<li><strong>Batch processing</strong>: Group similar documents for efficiency</li>
+<li><strong>Resource management</strong>: Monitor and optimize API usage</li>
+</ol>
+<h3 id="security-considerations">Security Considerations</h3>
+<ol>
+<li><strong>Data encryption</strong>: Encrypt files in transit and at rest</li>
+<li><strong>Access controls</strong>: Implement proper authentication and authorization</li>
+<li><strong>Audit trails</strong>: Log all processing steps for compliance</li>
+<li><strong>Data retention</strong>: Implement proper data lifecycle management</li>
+</ol>
+<h3 id="quality-assurance">Quality Assurance</h3>
+<ol>
+<li><strong>Confidence thresholds</strong>: Set minimum confidence levels for decisions</li>
+<li><strong>Human review</strong>: Escalate uncertain cases for manual review</li>
+<li><strong>Continuous monitoring</strong>: Track accuracy and performance metrics</li>
+<li><strong>Feedback loops</strong>: Use results to improve algorithms</li>
+</ol>
 
 
 

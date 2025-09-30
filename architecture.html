@@ -16,7 +16,7 @@
         <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="flows/text-qa.html">
+        <link rel="next" href="technology-stack.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -29,6 +29,9 @@
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -57,7 +60,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -78,9 +88,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="index.html" title="Tese - Anomaly Detection Architecture" class="md-header__button md-logo" aria-label="Tese - Anomaly Detection Architecture" data-md-component="logo">
       
@@ -109,6 +117,32 @@
       </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
@@ -132,6 +166,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
@@ -176,6 +215,189 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="architecture.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="technology-stack.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Technology Stack
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="flows/text-qa.html" class="md-tabs__link">
+          
+  
+  
+  Flows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="scoring.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Scoring & Output
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="implementation.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="cost-analysis.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cost Analysis
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="sample.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sample Usage
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="roadmap.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -189,8 +411,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="index.html" title="Tese - Anomaly Detection Architecture" class="md-nav__button md-logo" aria-label="Tese - Anomaly Detection Architecture" data-md-component="logo">
       
@@ -300,14 +524,194 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-orchestrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Orchestrator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-text-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Text Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-document-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Document Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-flow-overview" class="md-nav__link">
+  <a href="#data-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Data Flow (overview)
+      Data Flow
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Processing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Document Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Generation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technology Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-stack-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Stack (Recommended)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Stack (Recommended)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-google-document-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Google Document AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-resistant-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Resistant AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-custom-ai-agents-llm-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Custom AI Agents (LLM-based)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternative-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternative Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-not-other-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Not Other Frameworks?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Not Other Frameworks?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taggunveryfiocrolus-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Taggun/Veryfi/Ocrolus Limitations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-resistant-ai-google-document-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages of Resistant AI + Google Document AI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -325,19 +729,48 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="technology-stack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technology Stack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -350,8 +783,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Flows
           </label>
@@ -461,12 +894,12 @@
   
   
     <li class="md-nav__item">
-      <a href="roadmap.html" class="md-nav__link">
+      <a href="cost-analysis.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Roadmap
+    Cost Analysis
     
   </span>
   
@@ -488,7 +921,29 @@
   
   
   <span class="md-ellipsis">
-    Sample
+    Sample Usage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="roadmap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
     
   </span>
   
@@ -531,14 +986,194 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-orchestrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Orchestrator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-text-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Text Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-document-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Document Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-flow-overview" class="md-nav__link">
+  <a href="#data-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Data Flow (overview)
+      Data Flow
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Processing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#document-analysis-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Document Analysis Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Generation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technology Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-stack-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Stack (Recommended)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Stack (Recommended)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-google-document-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Google Document AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-resistant-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Resistant AI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-custom-ai-agents-llm-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Custom AI Agents (LLM-based)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternative-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternative Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-not-other-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Not Other Frameworks?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Not Other Frameworks?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taggunveryfiocrolus-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Taggun/Veryfi/Ocrolus Limitations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-resistant-ai-google-document-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages of Resistant AI + Google Document AI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -563,17 +1198,103 @@
 
 <h1 id="architecture">Architecture</h1>
 <h2 id="components">Components</h2>
+<h3 id="1-orchestrator">1. Orchestrator</h3>
+<p>The central component that coordinates all processing flows and manages the overall workflow.</p>
+<p><strong>Responsibilities:</strong>
+- Receive and validate input data
+- Route processing to appropriate flows
+- Aggregate results from all flows
+- Generate final anomaly report
+- Handle error recovery and retries</p>
+<h3 id="2-text-analysis-flow">2. Text Analysis Flow</h3>
+<p>Analyzes the provided answer against historical data for the same question.</p>
+<p><strong>Components:</strong>
+- Historical Data Retrieval
+- Statistical Analysis Engine
+- Pattern Recognition
+- Anomaly Scoring</p>
+<p><strong>Process:</strong>
+1. Retrieve all historical answers for the question ID
+2. Perform statistical analysis (mean, standard deviation, outliers)
+3. Apply pattern recognition algorithms
+4. Generate anomaly score and explanation</p>
+<h3 id="3-document-analysis-flow">3. Document Analysis Flow</h3>
+<p>Processes attached files to detect tampering and extract relevant information.</p>
+<p><strong>Components:</strong>
+- File Format Detection
+- Tampering Detection Engine
+- Content Extraction Engine
+- Multi-file Correlation</p>
+<p><strong>Process:</strong>
+1. Detect file format and validate integrity
+2. Perform tampering analysis
+3. Extract relevant content and data
+4. Correlate information across multiple files</p>
+<h2 id="data-flow">Data Flow</h2>
+<h3 id="input-processing">Input Processing</h3>
+<pre><code>Input → Orchestrator → Validation → Routing
+</code></pre>
+<h3 id="text-analysis-flow">Text Analysis Flow</h3>
+<pre><code>Question ID → Historical Data → Statistical Analysis → Anomaly Detection → Score + Description
+</code></pre>
+<h3 id="document-analysis-flow">Document Analysis Flow</h3>
+<pre><code>Files → Format Detection → Tampering Check → Content Extraction → Answer Validation → Scores + Descriptions
+</code></pre>
+<h3 id="output-generation">Output Generation</h3>
+<pre><code>All Scores → Aggregation → Final Report → Storage
+</code></pre>
+<h2 id="technology-stack">Technology Stack</h2>
+<h3 id="primary-stack-recommended">Primary Stack (Recommended)</h3>
+<h4 id="1-google-document-ai">1. Google Document AI</h4>
+<p><strong>Purpose</strong>: Content extraction and OCR
+<strong>Components</strong>:
+- <strong>Form Parser</strong>: $30/1,000 pages - General purpose extraction
+- <strong>Utility Parser</strong>: $0.10 per 10 pages - Specialized for utility bills
+- <strong>Layout Parser</strong>: $10/1,000 pages - Text and table extraction
+- <strong>Enterprise OCR</strong>: $1.50/1,000 pages - High-accuracy OCR</p>
+<p><strong>Advantages</strong>:
+- High accuracy across multiple file formats
+- Specialized processors for different document types
+- Integration with Google Cloud ecosystem
+- Scalable pricing model</p>
+<h4 id="2-resistant-ai">2. Resistant AI</h4>
+<p><strong>Purpose</strong>: Document tampering detection
+<strong>Integration</strong>: Available through Google Cloud Marketplace
+<strong>Features</strong>:
+- Forensic-grade tampering detection
+- Support for multiple file formats
+- Real-time analysis (&lt;20 seconds)
+- Detailed tampering indicators</p>
+<p><strong>Advantages</strong>:
+- Built specifically for document forensics
+- Integrates seamlessly with Google Document AI
+- Provides detailed tampering indicators
+- Enterprise-grade security</p>
+<h4 id="3-custom-ai-agents-llm-based">3. Custom AI Agents (LLM-based)</h4>
+<p><strong>Purpose</strong>: Orchestration, validation, and reasoning
+<strong>Technology</strong>: OpenAI GPT-4o-mini or similar
+<strong>Cost</strong>: ~$0.15/1M input tokens, $0.60/1M output tokens</p>
+<p><strong>Responsibilities</strong>:
+- Orchestrate the entire workflow
+- Perform multi-file reasoning
+- Generate explanations and citations
+- Handle edge cases and conflicts</p>
+<h2 id="alternative-solutions">Alternative Solutions</h2>
+<h3 id="why-not-other-frameworks">Why Not Other Frameworks?</h3>
+<h4 id="taggunveryfiocrolus-limitations">Taggun/Veryfi/Ocrolus Limitations</h4>
 <ul>
-<li><strong>Orchestrator</strong> — routes a user's question + files to relevant pipelines.</li>
-<li><strong>Text Q&amp;A Flow</strong> — extracts answers from historical text; returns confidence.</li>
-<li><strong>Document Analysis Flow</strong> — processes PDFs/Images; OCR + tamper checks.</li>
+<li><strong>Narrow domain focus</strong>: Optimized for receipts/invoices, not general documents</li>
+<li><strong>Limited file format support</strong>: Primarily image-based, not PDF/Office files</li>
+<li><strong>Workflow constraints</strong>: Built for specific use cases (expenses, lending)</li>
+<li><strong>Integration complexity</strong>: Not designed for multi-file, multi-format workflows</li>
 </ul>
-<h2 id="data-flow-overview">Data Flow (overview)</h2>
-<ol>
-<li>Ingest question and optional files.</li>
-<li>Select flow(s) based on inputs.</li>
-<li>Aggregate evidence; compute scores; return final JSON response.</li>
-</ol>
+<h4 id="advantages-of-resistant-ai-google-document-ai">Advantages of Resistant AI + Google Document AI</h4>
+<ul>
+<li><strong>Breadth and depth</strong>: Covers all file types with specialized processors</li>
+<li><strong>Clean separation of concerns</strong>: Tampering vs. extraction vs. validation</li>
+<li><strong>Google Cloud integration</strong>: Seamless deployment and scaling</li>
+<li><strong>Future-proof</strong>: Designed for enterprise workflows</li>
+</ul>
 
 
 
@@ -593,6 +1314,12 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -622,7 +1349,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.50899def.min.js"></script>

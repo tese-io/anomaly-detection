@@ -13,10 +13,8 @@
         <link rel="canonical" href="https://tese-io.github.io/anomaly-detection/roadmap.html">
       
       
-        <link rel="prev" href="implementation.html">
+        <link rel="prev" href="sample.html">
       
-      
-        <link rel="next" href="sample.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -29,6 +27,9 @@
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -57,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -78,9 +86,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="index.html" title="Tese - Anomaly Detection Architecture" class="md-header__button md-logo" aria-label="Tese - Anomaly Detection Architecture" data-md-component="logo">
       
@@ -109,6 +115,32 @@
       </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
@@ -132,6 +164,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
@@ -176,6 +213,189 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="architecture.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Architecture
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="technology-stack.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Technology Stack
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="flows/text-qa.html" class="md-tabs__link">
+          
+  
+  
+  Flows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="scoring.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Scoring & Output
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="implementation.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Implementation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="cost-analysis.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cost Analysis
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="sample.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sample Usage
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="roadmap.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -189,8 +409,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="index.html" title="Tese - Anomaly Detection Architecture" class="md-nav__button md-logo" aria-label="Tese - Anomaly Detection Architecture" data-md-component="logo">
       
@@ -265,19 +487,48 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="technology-stack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technology Stack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -290,8 +541,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Flows
           </label>
@@ -398,30 +649,20 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="roadmap.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="cost-analysis.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Roadmap
+    Cost Analysis
     
   </span>
   
 
       </a>
-      
     </li>
   
 
@@ -438,12 +679,502 @@
   
   
   <span class="md-ellipsis">
-    Sample
+    Sample Usage
     
   </span>
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="roadmap.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-core-implementation-q1-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Core Implementation (Q1 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1: Core Implementation (Q1 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Completed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚧 In Progress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planned" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Planned
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-integration-testing-q2-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Integration &amp; Testing (Q2 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2: Integration &amp; Testing (Q2 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planned_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Planned
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Integration Tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Testing Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-deployment-launch-q3-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Deployment &amp; Launch (Q3 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3: Deployment &amp; Launch (Q3 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Security
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-enhancement-scale-q4-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 4: Enhancement &amp; Scale (Q4 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4: Enhancement &amp; Scale (Q4 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Feature Enhancements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Scalability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Advanced Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-enterprise-features-q1-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 5: Enterprise Features (Q1 2026)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5: Enterprise Features (Q1 2026)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏢 Enterprise Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Integrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Analytics &amp; Reporting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-debt-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Debt &amp; Maintenance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Debt &amp; Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Code Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Infrastructure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research &amp; Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research &amp; Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rd-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 R&amp;D Projects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Learning &amp; Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community &amp; Open Source
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community &amp; Open Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#community-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Community Building
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Success Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-performance-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Key Performance Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Business Goals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Technical Risks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      💼 Business Risks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback &amp; Iteration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedback &amp; Iteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feedback-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Feedback Collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Continuous Improvement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -468,6 +1199,440 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-core-implementation-q1-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Core Implementation (Q1 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1: Core Implementation (Q1 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Completed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚧 In Progress
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planned" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Planned
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-integration-testing-q2-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Integration &amp; Testing (Q2 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2: Integration &amp; Testing (Q2 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planned_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Planned
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Integration Tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Testing Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-deployment-launch-q3-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Deployment &amp; Launch (Q3 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3: Deployment &amp; Launch (Q3 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Security
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-enhancement-scale-q4-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 4: Enhancement &amp; Scale (Q4 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4: Enhancement &amp; Scale (Q4 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Feature Enhancements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Scalability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Advanced Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-enterprise-features-q1-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 5: Enterprise Features (Q1 2026)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5: Enterprise Features (Q1 2026)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏢 Enterprise Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Integrations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Analytics &amp; Reporting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-debt-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Debt &amp; Maintenance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Debt &amp; Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Code Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Infrastructure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research &amp; Development
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research &amp; Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rd-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 R&amp;D Projects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Learning &amp; Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community &amp; Open Source
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community &amp; Open Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#community-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Community Building
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Success Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-performance-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Key Performance Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Business Goals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Technical Risks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      💼 Business Risks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback-iteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback &amp; Iteration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedback &amp; Iteration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feedback-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Feedback Collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Continuous Improvement
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -486,12 +1651,258 @@
 
 
 <h1 id="roadmap">Roadmap</h1>
+<h2 id="current-status">Current Status</h2>
+<p>The anomaly detection system is currently in the <strong>development phase</strong> with core architecture and documentation completed. The system is designed to validate metric catalog records against supporting documents using Google Document AI and Resistant AI.</p>
+<h2 id="phase-1-core-implementation-q1-2025">Phase 1: Core Implementation (Q1 2025)</h2>
+<h3 id="completed">✅ Completed</h3>
 <ul>
-<li>[ ] Publish JSON Schema for final response</li>
-<li>[ ] Add sample adapters (OCR, tamper)</li>
-<li>[ ] Benchmarks + test fixtures</li>
-<li>[ ] Good first issues for contributors</li>
+<li>[x] System architecture design</li>
+<li>[x] Technology stack selection</li>
+<li>[x] API design and specifications</li>
+<li>[x] Database schema design</li>
+<li>[x] Documentation framework setup</li>
 </ul>
+<h3 id="in-progress">🚧 In Progress</h3>
+<ul>
+<li>[ ] Core orchestrator implementation</li>
+<li>[ ] Google Document AI integration</li>
+<li>[ ] Resistant AI integration</li>
+<li>[ ] Basic API endpoints</li>
+<li>[ ] Database implementation</li>
+</ul>
+<h3 id="planned">📋 Planned</h3>
+<ul>
+<li>[ ] Text analysis engine</li>
+<li>[ ] Document analysis engine</li>
+<li>[ ] Scoring engine</li>
+<li>[ ] Basic error handling</li>
+<li>[ ] Unit tests</li>
+</ul>
+<h2 id="phase-2-integration-testing-q2-2025">Phase 2: Integration &amp; Testing (Q2 2025)</h2>
+<h3 id="planned_1">📋 Planned</h3>
+<ul>
+<li>[ ] End-to-end integration testing</li>
+<li>[ ] Performance optimization</li>
+<li>[ ] Security implementation</li>
+<li>[ ] Monitoring and logging</li>
+<li>[ ] Docker containerization</li>
+<li>[ ] CI/CD pipeline setup</li>
+</ul>
+<h3 id="integration-tasks">🔄 Integration Tasks</h3>
+<ul>
+<li>[ ] Google Cloud setup and configuration</li>
+<li>[ ] Resistant AI API integration</li>
+<li>[ ] OpenAI API integration</li>
+<li>[ ] Database deployment</li>
+<li>[ ] File storage implementation</li>
+</ul>
+<h3 id="testing-strategy">🧪 Testing Strategy</h3>
+<ul>
+<li>[ ] Unit test coverage (&gt;80%)</li>
+<li>[ ] Integration test suite</li>
+<li>[ ] Performance testing</li>
+<li>[ ] Security testing</li>
+<li>[ ] Load testing</li>
+<li>[ ] User acceptance testing</li>
+</ul>
+<h2 id="phase-3-deployment-launch-q3-2025">Phase 3: Deployment &amp; Launch (Q3 2025)</h2>
+<h3 id="deployment">🚀 Deployment</h3>
+<ul>
+<li>[ ] Production environment setup</li>
+<li>[ ] Database migration scripts</li>
+<li>[ ] Environment configuration</li>
+<li>[ ] SSL/TLS certificates</li>
+<li>[ ] Domain configuration</li>
+<li>[ ] CDN setup</li>
+</ul>
+<h3 id="monitoring">📊 Monitoring</h3>
+<ul>
+<li>[ ] Application monitoring (Prometheus/Grafana)</li>
+<li>[ ] Log aggregation (ELK stack)</li>
+<li>[ ] Error tracking (Sentry)</li>
+<li>[ ] Performance monitoring</li>
+<li>[ ] Cost monitoring</li>
+<li>[ ] Alert configuration</li>
+</ul>
+<h3 id="security">🔒 Security</h3>
+<ul>
+<li>[ ] Authentication and authorization</li>
+<li>[ ] API rate limiting</li>
+<li>[ ] Input validation</li>
+<li>[ ] Data encryption</li>
+<li>[ ] Security headers</li>
+<li>[ ] Vulnerability scanning</li>
+</ul>
+<h2 id="phase-4-enhancement-scale-q4-2025">Phase 4: Enhancement &amp; Scale (Q4 2025)</h2>
+<h3 id="feature-enhancements">🎯 Feature Enhancements</h3>
+<ul>
+<li>[ ] Advanced scoring algorithms</li>
+<li>[ ] Custom processor support</li>
+<li>[ ] Batch processing capabilities</li>
+<li>[ ] Real-time processing</li>
+<li>[ ] Mobile API support</li>
+<li>[ ] Webhook notifications</li>
+</ul>
+<h3 id="scalability">📈 Scalability</h3>
+<ul>
+<li>[ ] Horizontal scaling</li>
+<li>[ ] Load balancing</li>
+<li>[ ] Database optimization</li>
+<li>[ ] Caching implementation</li>
+<li>[ ] CDN optimization</li>
+<li>[ ] Auto-scaling configuration</li>
+</ul>
+<h3 id="advanced-features">🔧 Advanced Features</h3>
+<ul>
+<li>[ ] Machine learning model training</li>
+<li>[ ] Custom document types</li>
+<li>[ ] Advanced analytics</li>
+<li>[ ] Reporting dashboard</li>
+<li>[ ] API versioning</li>
+<li>[ ] GraphQL support</li>
+</ul>
+<h2 id="phase-5-enterprise-features-q1-2026">Phase 5: Enterprise Features (Q1 2026)</h2>
+<h3 id="enterprise-capabilities">🏢 Enterprise Capabilities</h3>
+<ul>
+<li>[ ] Multi-tenant support</li>
+<li>[ ] Role-based access control</li>
+<li>[ ] Audit logging</li>
+<li>[ ] Compliance reporting</li>
+<li>[ ] Data retention policies</li>
+<li>[ ] Backup and recovery</li>
+</ul>
+<h3 id="integrations">🔗 Integrations</h3>
+<ul>
+<li>[ ] Third-party API integrations</li>
+<li>[ ] Webhook system</li>
+<li>[ ] Event streaming</li>
+<li>[ ] Message queues</li>
+<li>[ ] External database connections</li>
+<li>[ ] File system integrations</li>
+</ul>
+<h3 id="analytics-reporting">📊 Analytics &amp; Reporting</h3>
+<ul>
+<li>[ ] Business intelligence dashboard</li>
+<li>[ ] Custom reports</li>
+<li>[ ] Data export capabilities</li>
+<li>[ ] Trend analysis</li>
+<li>[ ] Performance metrics</li>
+<li>[ ] Cost analysis tools</li>
+</ul>
+<h2 id="technical-debt-maintenance">Technical Debt &amp; Maintenance</h2>
+<h3 id="code-quality">🔧 Code Quality</h3>
+<ul>
+<li>[ ] Code review process</li>
+<li>[ ] Static analysis tools</li>
+<li>[ ] Code coverage monitoring</li>
+<li>[ ] Documentation updates</li>
+<li>[ ] Refactoring tasks</li>
+<li>[ ] Performance optimization</li>
+</ul>
+<h3 id="infrastructure">🛠️ Infrastructure</h3>
+<ul>
+<li>[ ] Infrastructure as Code</li>
+<li>[ ] Automated backups</li>
+<li>[ ] Disaster recovery</li>
+<li>[ ] Security updates</li>
+<li>[ ] Dependency updates</li>
+<li>[ ] Environment parity</li>
+</ul>
+<h2 id="research-development">Research &amp; Development</h2>
+<h3 id="rd-projects">🔬 R&amp;D Projects</h3>
+<ul>
+<li>[ ] Custom ML models for document analysis</li>
+<li>[ ] Advanced tampering detection</li>
+<li>[ ] Natural language processing improvements</li>
+<li>[ ] Computer vision enhancements</li>
+<li>[ ] Blockchain integration</li>
+<li>[ ] Edge computing support</li>
+</ul>
+<h3 id="learning-development">📚 Learning &amp; Development</h3>
+<ul>
+<li>[ ] Team training programs</li>
+<li>[ ] Technology workshops</li>
+<li>[ ] Conference attendance</li>
+<li>[ ] Open source contributions</li>
+<li>[ ] Research publications</li>
+<li>[ ] Patent applications</li>
+</ul>
+<h2 id="community-open-source">Community &amp; Open Source</h2>
+<h3 id="community-building">🌐 Community Building</h3>
+<ul>
+<li>[ ] Open source project launch</li>
+<li>[ ] Contributor guidelines</li>
+<li>[ ] Documentation for contributors</li>
+<li>[ ] Issue templates</li>
+<li>[ ] Pull request templates</li>
+<li>[ ] Community forums</li>
+</ul>
+<h3 id="documentation">📖 Documentation</h3>
+<ul>
+<li>[ ] API documentation</li>
+<li>[ ] Developer guides</li>
+<li>[ ] User manuals</li>
+<li>[ ] Video tutorials</li>
+<li>[ ] Blog posts</li>
+<li>[ ] Case studies</li>
+</ul>
+<h2 id="success-metrics">Success Metrics</h2>
+<h3 id="key-performance-indicators">📊 Key Performance Indicators</h3>
+<ul>
+<li><strong>Processing Accuracy</strong>: &gt;95% accuracy in anomaly detection</li>
+<li><strong>Processing Speed</strong>: &lt;30 seconds per document analysis</li>
+<li><strong>System Uptime</strong>: &gt;99.9% availability</li>
+<li><strong>Cost Efficiency</strong>: &lt;$0.10 per document analysis</li>
+<li><strong>User Satisfaction</strong>: &gt;4.5/5 rating</li>
+<li><strong>API Response Time</strong>: &lt;2 seconds for 95% of requests</li>
+</ul>
+<h3 id="business-goals">🎯 Business Goals</h3>
+<ul>
+<li><strong>Market Adoption</strong>: 100+ active users by end of 2025</li>
+<li><strong>Revenue Growth</strong>: $100K+ ARR by end of 2025</li>
+<li><strong>Partnerships</strong>: 5+ strategic partnerships</li>
+<li><strong>Awards</strong>: Industry recognition for innovation</li>
+<li><strong>Team Growth</strong>: 10+ team members by end of 2025</li>
+</ul>
+<h2 id="risk-management">Risk Management</h2>
+<h3 id="technical-risks">⚠️ Technical Risks</h3>
+<ul>
+<li><strong>API Dependencies</strong>: Mitigate with fallback options</li>
+<li><strong>Scalability Issues</strong>: Plan for horizontal scaling</li>
+<li><strong>Data Security</strong>: Implement comprehensive security measures</li>
+<li><strong>Performance Degradation</strong>: Monitor and optimize continuously</li>
+<li><strong>Integration Failures</strong>: Implement robust error handling</li>
+</ul>
+<h3 id="business-risks">💼 Business Risks</h3>
+<ul>
+<li><strong>Market Competition</strong>: Focus on unique value proposition</li>
+<li><strong>Regulatory Changes</strong>: Stay updated with compliance requirements</li>
+<li><strong>Technology Changes</strong>: Adapt to new technologies and standards</li>
+<li><strong>Team Attrition</strong>: Implement knowledge sharing and documentation</li>
+<li><strong>Funding</strong>: Secure additional funding if needed</li>
+</ul>
+<h2 id="feedback-iteration">Feedback &amp; Iteration</h2>
+<h3 id="feedback-collection">📝 Feedback Collection</h3>
+<ul>
+<li>[ ] User feedback system</li>
+<li>[ ] Beta testing program</li>
+<li>[ ] Customer interviews</li>
+<li>[ ] Usage analytics</li>
+<li>[ ] Performance monitoring</li>
+<li>[ ] Error tracking</li>
+</ul>
+<h3 id="continuous-improvement">🔄 Continuous Improvement</h3>
+<ul>
+<li>[ ] Monthly retrospectives</li>
+<li>[ ] Quarterly planning sessions</li>
+<li>[ ] Annual strategy reviews</li>
+<li>[ ] Technology assessments</li>
+<li>[ ] Market research</li>
+<li>[ ] Competitive analysis</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This roadmap provides a comprehensive plan for developing, deploying, and scaling the anomaly detection system. The phased approach ensures steady progress while maintaining quality and addressing technical and business challenges. Regular reviews and updates will ensure the roadmap remains relevant and achievable.</p>
+<p>For questions or suggestions about this roadmap, please contact the development team or create an issue in the project repository.</p>
 
 
 
@@ -511,6 +1922,12 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -540,7 +1957,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.50899def.min.js"></script>
